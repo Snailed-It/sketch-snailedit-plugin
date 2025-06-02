@@ -2,6 +2,7 @@
   "name": "Snailed It",
   "identifier": "dev.snailedit",
   "version": "1.0.0",
+  "homepage": "https://github.com/Snailed-It/sketch-snailedit-plugin",
   "description": "Snailed It's Sketch Utilities",
   "author": "Dom",
   "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
