@@ -1,0 +1,25 @@
+{
+  "name": "Snailed It",
+  "identifier": "dev.snailedit",
+  "version": "1.0.0",
+  "description": "Snailed It's Sketch Utilities",
+  "author": "Dom",
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Rename Screenshots",
+      "identifier": "snailedit.rename-screenshots",
+      "script": "__rename-screenshots.js",
+      "handler": "default"
+    }
+  ],
+  "menu": {
+    "title": "Snailed It",
+    "items": [
+      "snailedit.rename-screenshots"
+    ]
+  },
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}
