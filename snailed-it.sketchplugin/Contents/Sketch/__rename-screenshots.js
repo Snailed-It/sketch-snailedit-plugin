@@ -159,6 +159,8 @@ function renameLayers(selectedLayers, format, device, model, type, app) {
   selectedLayers.forEach(function (layer, i) {
     var originalName = layer.name;
     var name = stripIncorrectSuffix(originalName);
+    var appPrefixPattern = new RegExp("^".concat(app, "_"), 'i');
+    name = name.replace(appPrefixPattern, '');
     if (!name.startsWith(prefix)) {
       name = prefix + name;
     }

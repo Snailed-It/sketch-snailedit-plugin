@@ -48,6 +48,9 @@ function renameLayers(selectedLayers, format, device, model, type, app) {
     const originalName = layer.name
     let name = stripIncorrectSuffix(originalName)
 
+    const appPrefixPattern = new RegExp(`^${app}_`, 'i')
+    name = name.replace(appPrefixPattern, '')
+
     if (!name.startsWith(prefix)) {
       name = prefix + name
     }
