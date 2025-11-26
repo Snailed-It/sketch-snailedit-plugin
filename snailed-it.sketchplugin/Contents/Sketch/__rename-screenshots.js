@@ -111,10 +111,10 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 var UI = sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI;
 var formats = ['Device', 'Combined', 'Partial', 'Press', 'AppStore'];
 var devices = ['iPhone', 'iPad'];
-var iphoneModels = ['iPhone_16_Pro', 'iPhone_15_Pro'];
-var ipadModels = ['iPad_Pro_M4_13inch', 'iPad_Air_M2_11inch'];
+var iphoneModels = ['iPhone_17_Pro', 'iPhone_16_Pro', 'iPhone_15_Pro'];
+var ipadModels = ['iPad_Pro_M5_13inch', 'iPad_Pro_M4_13inch', 'iPad_Air_M2_11inch'];
 var types = ['Framed', 'Raw'];
-var apps = ['Capsule', 'Logger'];
+var apps = ['Capsule', 'Logger', 'Toolbox_Pro', 'Pushcut', 'Nautomate', 'Menu_Box'].sort();
 function stripIncorrectSuffix(name) {
   var allModels = [].concat(iphoneModels, ipadModels);
   var _iterator = _createForOfIteratorHelper(allModels),
