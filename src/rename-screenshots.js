@@ -3,10 +3,10 @@ const UI = sketch.UI
 
 const formats = ['Device', 'Combined', 'Partial', 'Press', 'AppStore']
 const devices = ['iPhone', 'iPad']
-const iphoneModels = ['iPhone_16_Pro', 'iPhone_15_Pro']
-const ipadModels = ['iPad_Pro_M4_13inch', 'iPad_Air_M2_11inch']
+const iphoneModels = ['iPhone_17_Pro', 'iPhone_16_Pro', 'iPhone_15_Pro']
+const ipadModels = ['iPad_Pro_M5_13inch', 'iPad_Pro_M4_13inch', 'iPad_Air_M2_11inch']
 const types = ['Framed', 'Raw']
-const apps = ['Capsule', 'Logger']
+const apps = ['Capsule', 'Logger', 'Toolbox_Pro', 'Pushcut', 'Nautomate', 'Menu_Box'].sort()
 
 function stripIncorrectSuffix(name) {
   const allModels = [...iphoneModels, ...ipadModels]
