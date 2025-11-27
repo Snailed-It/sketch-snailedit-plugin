@@ -19,6 +19,12 @@ function stripIncorrectSuffix(name) {
   return name
 }
 
+function stripFolders(name) {
+  const parts = name.split(/[/\\]/)
+  return parts[parts.length - 1]
+}
+
+
 function renameLayers(selectedLayers, format, device, model, type, app) {
   let prefix = ''
   const correctDarkSuffix = `_${model}_Dark`
@@ -46,7 +52,8 @@ function renameLayers(selectedLayers, format, device, model, type, app) {
 
   selectedLayers.forEach((layer, i) => {
     const originalName = layer.name
-    let name = stripIncorrectSuffix(originalName)
+    let striped_folder_name = stripFolders(originalName)
+    let name = stripIncorrectSuffix(striped_folder_name)
 
     const appPrefixPattern = new RegExp(`^${app}_`, 'i')
     name = name.replace(appPrefixPattern, '')

@@ -134,6 +134,10 @@ function stripIncorrectSuffix(name) {
   if (name.endsWith('_Light')) return name.slice(0, -6);
   return name;
 }
+function stripFolders(name) {
+  var parts = name.split(/[/\\]/);
+  return parts[parts.length - 1];
+}
 function renameLayers(selectedLayers, format, device, model, type, app) {
   var prefix = '';
   var correctDarkSuffix = "_".concat(model, "_Dark");
@@ -158,7 +162,8 @@ function renameLayers(selectedLayers, format, device, model, type, app) {
   var useLightDark = format !== 'AppStore';
   selectedLayers.forEach(function (layer, i) {
     var originalName = layer.name;
-    var name = stripIncorrectSuffix(originalName);
+    var striped_folder_name = stripFolders(originalName);
+    var name = stripIncorrectSuffix(striped_folder_name);
     var appPrefixPattern = new RegExp("^".concat(app, "_"), 'i');
     name = name.replace(appPrefixPattern, '');
     if (!name.startsWith(prefix)) {
