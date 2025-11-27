@@ -8,7 +8,7 @@ Provides useful utilities we've developed in house
 
 1. Download and install snailed-it.sketchplugin [from the latest release](https://github.com/Snailed-It/sketch-snailedit-plugin/releases)
 2. The plugin should then be listed in Sketch, ensure it is enabled.
-![[assets/Sketch_Preferences.png]]
+   ![Sketch Preferences](assets/Sketch_Preferences.png)
 3. You can now access the plugins tools from the `Plugins` menu in any Sketch Workspace.
 
 ## Developments
