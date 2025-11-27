@@ -140,19 +140,19 @@ function renameLayers(selectedLayers, format, device, model, type, app) {
   var correctLightSuffix = "_".concat(model, "_Light");
   switch (format) {
     case 'Device':
-      prefix = "".concat(device, "/").concat(model, "/").concat(type, "/").concat(app, "_");
+      prefix = "".concat(app, "_Screenshots/").concat(device, "/").concat(model, "/").concat(type, "/").concat(app, "_");
       break;
     case 'Combined':
-      prefix = "Combined/".concat(app, "_");
+      prefix = "".concat(app, "_Screenshots/Combined/").concat(app, "_");
       break;
     case 'Partial':
-      prefix = "Partial/".concat(app, "_");
+      prefix = "".concat(app, "_Screenshots/Partial/").concat(app, "_");
       break;
     case 'Press':
-      prefix = "Press/".concat(model, "/").concat(type, "/").concat(app, "_");
+      prefix = "".concat(app, "_Screenshots/Press/").concat(model, "/").concat(type, "/").concat(app, "_");
       break;
     case 'AppStore':
-      prefix = "AppStore/".concat(device, "/").concat(app, "_");
+      prefix = "".concat(app, "_Screenshots/AppStore/").concat(device, "/").concat(app, "_");
       break;
   }
   var useLightDark = format !== 'AppStore';

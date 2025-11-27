@@ -26,19 +26,19 @@ function renameLayers(selectedLayers, format, device, model, type, app) {
 
   switch (format) {
     case 'Device':
-      prefix = `${device}/${model}/${type}/${app}_`
+      prefix = `${app}_Screenshots/${device}/${model}/${type}/${app}_`
       break
     case 'Combined':
-      prefix = `Combined/${app}_`
+      prefix = `${app}_Screenshots/Combined/${app}_`
       break
     case 'Partial':
-      prefix = `Partial/${app}_`
+      prefix = `${app}_Screenshots/Partial/${app}_`
       break
     case 'Press':
-      prefix = `Press/${model}/${type}/${app}_`
+      prefix = `${app}_Screenshots/Press/${model}/${type}/${app}_`
       break
     case 'AppStore':
-      prefix = `AppStore/${device}/${app}_`
+      prefix = `${app}_Screenshots/AppStore/${device}/${app}_`
       break
   }
 
