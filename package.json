@@ -21,7 +21,7 @@
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.9.5"
+    "@skpm/builder": "^1.0.0"
   },
   "author": "Dom Chester <dom@snailedit.dev>"
 }
